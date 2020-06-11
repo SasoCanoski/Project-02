@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  background-image: url("Images/hero.jpg");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-right,
+ul,
+li {
+  display: inline-flex;
+  width: 40%;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-left p a {
+  width: 100%;
+  color: white;
+  text-decoration: unset;
+}
+
+.nav-left p {
+  width: 7%;
+}
+
+.nav-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.text-midle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 85vh;
+  position: relative;
+}
+
+.text-midle h1 {
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.text-midle button {
+  padding: 1%;
+  background-color: blue;
+  color: white;
+  border: unset;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 10%;
+  font-size: 16px;
+}
+
+.text-midle p {
+  font-size: 22px;
+}
+
+.text-img .text-img-1 .text-img-2,
+h2 {
+  font-size: 32px;
+}
+
+.text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-img p {
+  text-align: center;
+  width: 50%;
+}
+
+.main-image {
+  padding: 30px;
+}
+
+.img-one {
+  background-image: url("Images/coast.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 28%;
+  height: 230px;
+}
+
+.img-two {
+  background-image: url("Images/island.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 68%;
+  height: 230px;
+}
+
+.first-images {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.img-1 {
+  background-image: url("Images/balloon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 68%;
+  height: 230px;
+}
+
+.img-2 {
+  background-image: url("Images/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 28%;
+  height: 230px;
+}
+
+.text-img-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-img-1 p {
+  text-align: center;
+  width: 50%;
+}
+
+.main-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.icons-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icons-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icons-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icons-1 .icons-2 .icons-3,
+h3 {
+  font-size: 22px;
+}
+
+.main-two {
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+
+.text-img-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-img-2 p {
+  text-align: center;
+  width: 50%;
+}
+
+.input-1 {
+  text-align: center;
+}
+
+.input-1 input {
+  padding: 1%;
+  width: 30%;
+}
+
+.input-1 button {
+  padding: 1.2%;
+  border-radius: 5px;
+  border: unset;
+  background-color: blue;
+  color: white;
+}
+
+footer {
+  background-color: #414a4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.icons-bottom {
+  color: white;
+}
+
+.text-bottom {
+  width: 30%;
+  text-align: center;
+  color: #7f8587;
+}
+
+.icons-bottom .fa {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.text-bottom b {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-img {
+    background-image: url(images/hero.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav-right ul {
+    width: 70%;
+  }
+
+  .nav-left p {
+    font-size: 22px;
+  }
+
+  .img-one {
+    background-image: url("Images/coast.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 80%;
+    height: 230px;
+    margin: 20px;
+  }
+
+  .img-two {
+    background-image: url("Images/island.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 80%;
+    height: 230px;
+  }
+
+  .first-images {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .img-1 {
+    background-image: url("Images/balloon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 80%;
+    height: 230px;
+    margin: 20px;
+  }
+
+  .img-2 {
+    background-image: url("Images/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 80%;
+    height: 230px;
+  }
+
+  .main-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons-1 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .icons-2 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .icons-3 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .input-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-1 button {
+    width: 40%;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .input-1 input {
+    width: 80%;
+  }
+
+  .text-bottom {
+    width: 60%;
+  }
+
+  .text-midle p {
+    font-size: 32px;
+  }
+
+  .text-midle h1 {
+    margin: 0;
+    font-size: 48px;
+    width: max-content;
+  }
+
+  .text-midle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .text-midle button {
+    width: 20%;
+    padding: 2%;
+    background-color: blue;
+    color: white;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .text-img h2 {
+    font-size: 32px;
+  }
+
+  .text-img-1 h2 {
+    font-size: 32px;
+  }
+
+  .text-img-2 h2 {
+    font-size: 32px;
+  }
+
+  .main-two {
+    margin-top: 30px;
+  }
+
+  .icons-1,
+  .icons-2,
+  .icons-3 {
+    margin: 30px;
+  }
+
+  .icons-1 .icons-2 .icons-3,
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-left {
+    text-align: center;
+  }
+
+  .nav-right {
+    width: 100%;
+  }
+
+  .nav-right ul {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .text-midle h1 {
+    width: min-content;
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .text-midle p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-midle button {
+    width: max-content;
+  }
+
+  .img-one {
+    height: 400px;
+  }
+
+  .img-two {
+    height: 400px;
+  }
+
+  .img-1 {
+    height: 400px;
+  }
+
+  .img-2 {
+    height: 400px;
+  }
+
+  .text-bottom {
+    width: 70%;
+  }
+}
